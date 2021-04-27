@@ -6,14 +6,15 @@ function App() {
   let [count, setCount] = useState(0);
 
   const incremNum = () => {
-      setCount(count++);
+      setCount(count+1);
   }
 
   const decremNum = () => {
-    if(count == 0) {
+    if(count === 0) {
       alert("Sorry, 0 limit reached");
+      return 0;
     }
-    setCount(count--);
+    setCount(count-1);
   }
 
   return (
