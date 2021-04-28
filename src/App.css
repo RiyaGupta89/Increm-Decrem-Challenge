@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -21,13 +23,14 @@
 }
 
 h1 {
-  background-color: #4d4870;
+  font-weight: 100;
   text-align: center;
-  font-size: 2.5em;
-  margin-top: 2em;
-  color: #fff;
+  font-size: 3.5em;
+  margin-top: 1.25em;
+  margin-bottom: 1em;
+  color: #000;
   font-family: 'Lato', sans-serif;
-  box-shadow: 5px 5px 10px -7px rgba(0, 0, 0, 0.3);
+  text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
 }
 
 button {
@@ -35,7 +38,7 @@ button {
   color: #fff;
   font-family: 'Lato', sans-serif;
   border: none;
-  padding: 8px 20px;
+  padding: 8px 14px; 
   border-radius: 5px;
   font-size: 20px;
   margin: 3em 0;
@@ -44,6 +47,15 @@ button {
 
 button:hover {
   background-color: #5eaaa8;
+}
+
+
+.btn_red:hover {
+  color: #ff4757;
+}
+
+.btn_green:hover {
+  color: #2ed573;
 }
 
 .buttons {

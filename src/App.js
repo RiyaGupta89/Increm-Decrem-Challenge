@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import AddIcon from '@material-ui/icons/Add';
+import DeleteIcon from '@material-ui/icons/Delete';
+import Button from '@material-ui/core/Button';
+import Tooltip from '@material-ui/core/Tooltip';
 import './App.css';
 
 function App() {
@@ -11,7 +15,7 @@ function App() {
 
   const decremNum = () => {
     if(count === 0) {
-      alert("Sorry, 0 limit reached");
+      alert("Sorry, zero limit reached");
       return 0;
     }
     setCount(count-1);
@@ -23,8 +27,12 @@ function App() {
      <div className="center_div">
        <h1>{count}</h1>
        <div className="buttons">
-       <button onClick={incremNum}>Increm</button>
-       <button onClick={decremNum}>Decrem</button>
+       <Tooltip title="Add">
+       <Button onClick={incremNum} className="btn_green"><AddIcon /></Button>
+       </Tooltip>
+       <Tooltip title="Delete">
+       <Button onClick={decremNum} className="btn_red"><DeleteIcon /></Button>
+       </Tooltip>
        </div>
      </div>
    </div>
